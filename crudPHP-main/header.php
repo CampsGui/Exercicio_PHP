@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,44 +13,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
-            <style>
-                span {
-                    display: inline-block;
-                    width: 40px;
-                    height: 40px;
-                    margin: 6px;
-                    background-color: red;
-                }
-        </style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #f2f2f2;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body a {
+            color: #f2f2f2;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
 </head>
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="videos\video.mp4" type="video/mp4" />
+    </video>
 
-
-
-    <body class="bg-light p-3">
-            
+    <div class="content">
         <header> 
-                <div class="container-fluid p-5 bg-primary text-white text-center">
-        <h1>SGE - Sistema de Gerenciamento Escolar</h1>
-        <p>Resize this responsive page to see the effect!</p> 
-        </div>
-        
-        <div class="container mt-5">
-        <div class="row">
-            <div class="col-sm-4">
-            <h3>Column 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            <div class="container-fluid p-5 bg-primary text-white text-center">
+                <h1>SGE - Sistema de Gerenciamento Escolar</h1>
+                <p></p>
             </div>
-            <div class="col-sm-4">
-            <h3>Column 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-            <h3>Column 3</h3>        
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-        </div>
-        </div>
-        </header> 
+        </header>
+    </div>
+</body>
+</html>

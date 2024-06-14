@@ -16,9 +16,10 @@
     }
     else{ ?>
     <!-- Conteudo em HTML - Perdil ADMIN -->
+    <br>
     <h2>Painel Administrativo - SGE</h2>
     <hr>
-    <p>Você tem a permissão de acesso: <?php echo $usuario['perfil'] ?></p>
+    <h6>Você tem a permissão de acesso: <?php echo $usuario['perfil'] ?></h6><br>
     <div class="d-grid">
         <a href="form_cad_aluno.php" class="btn btn-primary btn-block">Cadastrar Aluno</a><br> <br>
         <a href="listar_aluno.php" class="btn btn-primary btn-block">Listar Alunos</a><br>

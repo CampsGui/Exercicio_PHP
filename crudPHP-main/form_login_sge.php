@@ -26,6 +26,9 @@
         ?>
     </div>
     <br><br>
-    <a href="index.php" class="back-button"><img src="seta.png"  width = "30px"  height ="30px" alt="img"></a>
+    <div style="text-align: center;">
+    <a href="index.php" class="btn btn-primary">Voltar</a>
+    </div>
+
 
     <?php include "footer.php"; ?>
